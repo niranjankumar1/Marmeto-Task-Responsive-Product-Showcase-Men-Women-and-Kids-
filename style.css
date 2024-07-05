@@ -1,0 +1,141 @@
+body {
+  font-family: 'inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-attachment: fixed;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.up-section p{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.down-section{
+  display: flex;
+  flex-direction: column;
+}
+.down-section .tabs{
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+.tab{
+  padding: 12px 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.tab:hover{
+  background-color: black;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.tab .active{
+  background-color: black;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.tab i{
+  margin-right: 5px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.product-container{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.product-card {
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  /* height: 90%; */
+}
+.pro-img{
+  display: flex;
+  flex-basis: 80%;
+}
+.pro-det{
+  display: flex;
+  flex-basis: 20%;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  font-size: 12px;
+  display: inline-block;
+  z-index: 1; /* Ensure it's above the image */
+}
+.iname{
+  display: flex;
+}
+.iname h3{
+  margin-right: 6px;
+}
+.iname p{
+  padding-top: 6px;
+}
+.iprice{
+  margin-top: -20px;
+  display: flex;
+  gap: 40px;
+}
+.compare-at-price {
+  text-decoration: line-through;
+}
+.add-to-cart {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: -2pxpx;
+}
+.offer{
+  color: red;
+  font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+  .tab {
+    padding: 12px 40px; 
+  }
+  .product-card {
+    max-width: 100%; 
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab {
+    padding: 12px 60px; 
+  }
+}
